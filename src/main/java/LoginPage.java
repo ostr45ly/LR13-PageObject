@@ -11,14 +11,15 @@ import java.util.concurrent.TimeUnit;
 public class LoginPage {
 
 
+    private  WebDriver driver;
+    private  WebDriverWait wait;
     //@FindBy (id="login-form-username");
     //WebElenent userName;
     By usernameLocator = By.id("login-form-username");
     By passwordLocator = By.id("login-form-password");
     By loginButtonLocator = By.id("login-form-submit");
 
-    private  WebDriver driver;
-    private  WebDriverWait wait;
+   //SearchResultsPage seatcherror=new SearchResultsPage(driver);
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -27,18 +28,18 @@ public class LoginPage {
     }
 
     public LoginPage typeUsername(String username) {
-        //userName.clear();
-        //userName.sendKeys(username);
+        wait.withMessage("could not find the "+usernameLocator).until(ExpectedConditions.visibilityOfElementLocated(usernameLocator));
+        driver.findElement(usernameLocator).click();
         driver.findElement(usernameLocator).clear();
         driver.findElement(usernameLocator).sendKeys(username);
         return this;
     }
 
-    public void waitForSeachResults(){
-       // wait.withMessage("could not find the slowly loading text").util(ExpectedConditions.visibilityOfElementLocated(usernameLocator));
-    }
 
     public LoginPage typePassword(String password) {
+        wait.withMessage("could not find the "+passwordLocator).until(ExpectedConditions.visibilityOfElementLocated(passwordLocator));
+        driver.findElement(passwordLocator).click();
+        driver.findElement(passwordLocator).clear();
         driver.findElement(passwordLocator).sendKeys(password);
         return this;
     }
@@ -48,8 +49,8 @@ public class LoginPage {
         return this;
     }
 
-    public LoginPage open() {
-        driver.get("http://soft.it-hillel.com.ua:8080/login.jsp");
+    public LoginPage open(String url) {
+        driver.get(url);
         return this;
     }
 }

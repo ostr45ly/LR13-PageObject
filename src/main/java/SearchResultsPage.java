@@ -12,13 +12,11 @@ public class SearchResultsPage {
 
     public SearchResultsPage(WebDriver driver) {
         this.driver = driver;
-        wait=new WebDriverWait(driver,30);
+        this.wait=new WebDriverWait(driver,5);
     }
     public void waitForSeachResults(){
-
        wait.withMessage("could not find the login-form-username").until(ExpectedConditions.visibilityOfElementLocated(By.id("login-form-username")));
+      //  wait.withMessage("could not find the login-form-username").until(ExpectedConditions.invisibilityOfElementLocated(By.id("login-form-usernam"))); // чтобы не падал тест
     }
-    public void waitForSeachResultsCreate(){
-       // wait.withMessage("could not find the create_link").until(ExpectedConditions.visibilityOfElementLocated(By.id("create_link")));
-    }
+
 }

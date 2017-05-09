@@ -4,14 +4,13 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by oliva on 25.04.2017.
  */
-public class NewIssuesPage {
+public  class NewIssuesPage {
 
     By createSummary = By.id("summary");
-    By createButton = By.id("create-issue-submit");
+    By createButton = By.id("subtask-create-details-submit");
+    By createnewSubtask = By.id("stqc_show");
 
     private final WebDriver driver;
-    //private final HeaderPage headermenu;
-
 
     public NewIssuesPage(WebDriver driver) {
         this.driver = driver;
@@ -19,8 +18,10 @@ public class NewIssuesPage {
 
 
     public NewIssuesPage summaryIssues(String sumissues) {
-      //  HeaderPage  headermenu = new HeaderPage(drive);
-      //  headermenu.clickCreate();
+
+
+        driver.findElement(createnewSubtask).click();
+        driver.findElement(createSummary).click();
         driver.findElement(createSummary).clear();
         driver.findElement(createSummary).sendKeys(sumissues);
         return this;

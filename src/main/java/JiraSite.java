@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -12,7 +13,9 @@ public class JiraSite {
     }
 
     public LoginPage loginPage() { return new LoginPage(driver); }
-    public HeaderPage  headerpage () { return new HeaderPage(driver);  }
+    public HeaderPage headerpage () { return new HeaderPage(driver);  }
     public NewIssuesPage  newissuesPage () { return new NewIssuesPage(driver);  }
     public SearchResultsPage  searchResultsPage () { return new SearchResultsPage(driver);  }
+
+
 }
