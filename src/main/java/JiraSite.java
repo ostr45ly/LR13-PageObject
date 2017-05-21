@@ -16,6 +16,7 @@ public class JiraSite {
     public HeaderPage headerpage () { return new HeaderPage(driver);  }
     public NewIssuesPage  newissuesPage () { return new NewIssuesPage(driver);  }
     public SearchResultsPage  searchResultsPage () { return new SearchResultsPage(driver);  }
+    public DragAndDrop dragAndDrop () { return new DragAndDrop(driver);  }
 
 
 }
