@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79bf9a43-aad0-43e2-ac5b-10b47540730d" name="Default" comment="commit idea">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DragAndDrop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/HeaderPage.class" afterPath="$PROJECT_DIR$/target/classes/HeaderPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/JiraSite.class" afterPath="$PROJECT_DIR$/target/classes/JiraSite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NewIssuesPage.class" afterPath="$PROJECT_DIR$/target/classes/NewIssuesPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Selenium_Hillel.class" afterPath="$PROJECT_DIR$/target/classes/Selenium_Hillel.class" />
+    <list default="true" id="79bf9a43-aad0-43e2-ac5b-10b47540730d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/JiraSite.java" afterPath="$PROJECT_DIR$/src/main/java/JiraSite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NewIssuesPage.java" afterPath="$PROJECT_DIR$/src/main/java/NewIssuesPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Selenium_Hillel.java" afterPath="$PROJECT_DIR$/src/main/java/Selenium_Hillel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -120,6 +112,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="GitTestRepost" target-branch="master" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -514,6 +509,14 @@
       <option name="presentableId" value="Default" />
       <updated>1492426107732</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit idea">
+      <created>1495400792427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495400792427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
